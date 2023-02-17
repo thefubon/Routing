@@ -15,6 +15,10 @@
 		8889B7FA299FC533005E5448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8889B7F8299FC533005E5448 /* LaunchScreen.storyboard */; };
 		8889B806299FCF95005E5448 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B805299FCF95005E5448 /* DemoViewController.swift */; };
 		8889B808299FD01E005E5448 /* DemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8889B807299FD01E005E5448 /* DemoViewController.storyboard */; };
+		8889B80D299FF11E005E5448 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B80C299FF11E005E5448 /* LoginViewController.swift */; };
+		8889B80F299FF151005E5448 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8889B80E299FF151005E5448 /* LoginViewController.storyboard */; };
+		8889B813299FF71D005E5448 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8889B812299FF71D005E5448 /* TermsViewController.swift */; };
+		8889B815299FF738005E5448 /* TermsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8889B814299FF738005E5448 /* TermsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		8889B7FB299FC533005E5448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8889B805299FCF95005E5448 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		8889B807299FD01E005E5448 /* DemoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DemoViewController.storyboard; sourceTree = "<group>"; };
+		8889B80C299FF11E005E5448 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8889B80E299FF151005E5448 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		8889B812299FF71D005E5448 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		8889B814299FF738005E5448 /* TermsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TermsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 		8889B7EC299FC531005E5448 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				8889B810299FF702005E5448 /* Terms */,
+				8889B80B299FF0F8005E5448 /* Login */,
 				8889B804299FCF75005E5448 /* Demo */,
 				8889B803299FC5DE005E5448 /* Main */,
 				8889B802299FC584005E5448 /* Resources */,
@@ -103,6 +113,24 @@
 				8889B807299FD01E005E5448 /* DemoViewController.storyboard */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		8889B80B299FF0F8005E5448 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8889B80C299FF11E005E5448 /* LoginViewController.swift */,
+				8889B80E299FF151005E5448 /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8889B810299FF702005E5448 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				8889B812299FF71D005E5448 /* TermsViewController.swift */,
+				8889B814299FF738005E5448 /* TermsViewController.storyboard */,
+			);
+			path = Terms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +193,10 @@
 			files = (
 				8889B808299FD01E005E5448 /* DemoViewController.storyboard in Resources */,
 				8889B7FA299FC533005E5448 /* LaunchScreen.storyboard in Resources */,
+				8889B80F299FF151005E5448 /* LoginViewController.storyboard in Resources */,
 				8889B7F7299FC533005E5448 /* Assets.xcassets in Resources */,
 				8889B7F5299FC531005E5448 /* Main.storyboard in Resources */,
+				8889B815299FF738005E5448 /* TermsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +210,8 @@
 				8889B7F2299FC531005E5448 /* ViewController.swift in Sources */,
 				8889B7EE299FC531005E5448 /* AppDelegate.swift in Sources */,
 				8889B7F0299FC531005E5448 /* SceneDelegate.swift in Sources */,
+				8889B80D299FF11E005E5448 /* LoginViewController.swift in Sources */,
+				8889B813299FF71D005E5448 /* TermsViewController.swift in Sources */,
 				8889B806299FCF95005E5448 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

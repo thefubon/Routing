@@ -21,11 +21,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapLoginButton() {
-        
+        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func didTapTermsButton() {
-        
+        let storyboard = UIStoryboard(name: "TermsViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TermsViewController") as! TermsViewController
+        present(vc, animated: true)
     }
     
 }

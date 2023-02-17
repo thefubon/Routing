@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Routing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-7I-nfj">
+                                <rect key="frame" x="30" y="111" width="333" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="zHj-SA-ITP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mWg-ny-PtH">
+                                <rect key="frame" x="30" y="189" width="333" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="caI-Ib-FCP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="nDS-ZZ-bhw">
+                                <rect key="frame" x="30" y="267" width="333" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dYx-ca-h9p"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Войти" cornerStyle="large"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mWg-ny-PtH" firstAttribute="top" secondItem="dqC-7I-nfj" secondAttribute="bottom" constant="30" id="1VE-z2-0ar"/>
+                            <constraint firstItem="dqC-7I-nfj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="52" id="5dZ-8D-p9F"/>
+                            <constraint firstItem="nDS-ZZ-bhw" firstAttribute="top" secondItem="mWg-ny-PtH" secondAttribute="bottom" constant="30" id="JCu-6W-6uB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dqC-7I-nfj" secondAttribute="trailing" constant="30" id="Opq-X7-zwr"/>
+                            <constraint firstItem="nDS-ZZ-bhw" firstAttribute="top" secondItem="mWg-ny-PtH" secondAttribute="bottom" constant="30" id="Vhn-Jt-lwc"/>
+                            <constraint firstItem="dqC-7I-nfj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="bQo-TN-wTV"/>
+                            <constraint firstItem="mWg-ny-PtH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="elg-M7-Xee"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mWg-ny-PtH" secondAttribute="trailing" constant="30" id="mSV-If-Yeo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nDS-ZZ-bhw" secondAttribute="trailing" constant="30" id="sKQ-vt-v1B"/>
+                            <constraint firstItem="nDS-ZZ-bhw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="vLu-Ug-fEe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
