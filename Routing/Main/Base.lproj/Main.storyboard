@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,36 +12,14 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Routing" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz9-RF-wor">
-                                <rect key="frame" x="94" y="712" width="204" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Условия и соглашения">
-                                    <color key="baseForegroundColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapTermsButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytk-3w-Rcd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="77h-5t-KH7">
-                                <rect key="frame" x="94" y="656" width="200" height="48"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="tintColor" red="0.1843137443" green="0.43137252329999998" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Демо" cornerStyle="large">
-                                    <color key="baseBackgroundColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szo-Gy-Fgr"/>
-                                </connections>
-                            </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-pl-eiB">
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYW-pl-eiB">
                                 <rect key="frame" x="0.0" y="769" width="393" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <tabBarItem title="Медиа" image="square.grid.2x2.fill" catalog="system" id="pKK-PH-P3c"/>
                                     <tabBarItem title="Акции" image="bolt.fill" catalog="system" id="pmr-sF-TIv"/>
@@ -52,24 +29,58 @@
                                         <imageReference key="image" image="ellipsis" catalog="system" symbolScale="large"/>
                                     </tabBarItem>
                                 </items>
-                                <color key="selectedImageTintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="selectedImageTintColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MYg-17-7nA">
-                                <rect key="frame" x="131" y="263" width="130" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.1843137443" green="0.43137252329999998" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Войти"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Войти"/>
-                                <connections>
-                                    <action selector="didTapLoginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQF-oh-KFx"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="188" translatesAutoresizingMaskIntoConstraints="NO" id="LRG-4t-qdB">
+                                <rect key="frame" x="30" y="133" width="333" height="655"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MYg-17-7nA">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.1843137443" green="0.43137252329999998" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Войти"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Войти"/>
+                                        <connections>
+                                            <action selector="didTapLoginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQF-oh-KFx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="77h-5t-KH7">
+                                        <rect key="frame" x="0.0" y="235" width="333" height="47"/>
+                                        <color key="tintColor" red="0.1843137443" green="0.43137252329999998" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Демо" cornerStyle="large">
+                                            <color key="baseBackgroundColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapDemoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szo-Gy-Fgr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz9-RF-wor">
+                                        <rect key="frame" x="0.0" y="470" width="333" height="185"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Условия и соглашения">
+                                            <color key="baseForegroundColor" red="0.0" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapTermsButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytk-3w-Rcd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="FIF-8y-wtj"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FIF-8y-wtj" firstAttribute="trailing" secondItem="LRG-4t-qdB" secondAttribute="trailing" constant="30" id="EUl-pT-w2j"/>
+                            <constraint firstItem="LRG-4t-qdB" firstAttribute="top" secondItem="FIF-8y-wtj" secondAttribute="top" constant="30" id="GTB-C4-cer"/>
+                            <constraint firstItem="FIF-8y-wtj" firstAttribute="bottom" secondItem="LRG-4t-qdB" secondAttribute="bottom" constant="30" id="myo-a8-xuT"/>
+                            <constraint firstItem="LRG-4t-qdB" firstAttribute="leading" secondItem="FIF-8y-wtj" secondAttribute="leading" constant="30" id="yYK-7E-EpJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Подписка" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="KOh-oq-gbo">
+                    <navigationItem key="navigationItem" title="Подписка" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="KOh-oq-gbo">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="3an-gQ-0Yy"/>
                     </navigationItem>
                 </viewController>
@@ -102,8 +113,5 @@
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <image name="timelapse" catalog="system" width="128" height="124"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
